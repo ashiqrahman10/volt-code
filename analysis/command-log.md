@@ -1,0 +1,32 @@
+# Command Log
+
+- ls
+- find .. -name AGENTS.md -print
+- ls -a /workspace/volt-new
+- ls /workspace/volt-new/brain
+- ls /workspace/volt-new/brain-ui
+- cat /workspace/volt-new/brain-ui/README.md
+- cat /workspace/volt-new/specs.md
+- ls /workspace/volt-new/brain/src
+- rg -n "TODO|FIXME|NotImplemented|pass #" /workspace/volt-new/brain/src
+- cat /workspace/volt-new/brain-ui/package.json
+- sed -n '1,200p' /workspace/volt-new/brain/src/server.py
+- sed -n '200,400p' /workspace/volt-new/brain/src/server.py
+- sed -n '400,800p' /workspace/volt-new/brain/src/server.py
+- sed -n '800,1200p' /workspace/volt-new/brain/src/server.py
+- sed -n '1,240p' /workspace/volt-new/brain/src/database.py
+- sed -n '240,480p' /workspace/volt-new/brain/src/database.py
+- sed -n '1,200p' /workspace/volt-new/brain/src/verify_ingest.py
+- sed -n '1,200p' /workspace/volt-new/brain/src/verify_logs.py
+- sed -n '1,240p' /workspace/volt-new/brain/src/tools/k8s_client.py
+- sed -n '240,480p' /workspace/volt-new/brain/src/tools/k8s_client.py
+- rg -n "api/" /workspace/volt-new/brain-ui/src
+- sed -n '1,200p' /workspace/volt-new/brain-ui/src/lib/api.ts
+- sed -n '200,420p' /workspace/volt-new/brain-ui/src/lib/api.ts
+- sed -n '1,200p' /workspace/volt-new/brain/src/agent.py
+- sed -n '1,220p' /workspace/volt-new/brain/src/analysis/llm_rca.py
+- sed -n '220,440p' /workspace/volt-new/brain/src/analysis/llm_rca.py
+- sed -n '1,200p' /workspace/volt-new/brain/src/config.py
+- sed -n '1,240p' /workspace/volt-new/brain/src/ml/ml_detector.py
+- sed -n '240,480p' /workspace/volt-new/brain/src/ml/ml_detector.py
+- sed -n '1,220p' /workspace/volt-new/brain/src/data_adapter.py

@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+python-snappy
+protobuf
+grpcio
+debugpy
+aiofiles
+python-multipart
+boto3
+scikit-learn
+numpy
+groq
+pydantic
+python-dotenv
+kubernetes

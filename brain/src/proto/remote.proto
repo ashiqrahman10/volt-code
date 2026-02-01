@@ -1,0 +1,43 @@
+syntax = "proto3";
+package prometheus;
+
+option go_package = "prompb";
+
+import "types.proto";
+
+message WriteRequest {
+  repeated prometheus.TimeSeries timeseries = 1;
+  reserved  2;
+  repeated prometheus.MetricMetadata metadata = 3;
+}
+
+message ReadRequest {
+  repeated Query queries = 1;
+
+  enum ResponseType {
+    SAMPLES = 0;
+    STREAMED_XOR_CHUNKS = 1;
+  }
+
+  repeated ResponseType accepted_response_types = 2;
+}
+
+message ReadResponse {
+  repeated QueryResult results = 1;
+}
+
+message Query {
+  int64 start_timestamp_ms = 1;
+  int64 end_timestamp_ms = 2;
+  repeated prometheus.LabelMatcher matchers = 3;
+  prometheus.ReadHints hints = 4;
+}
+
+message QueryResult {
+  repeated prometheus.TimeSeries timeseries = 1;
+}
+
+message ChunkedReadResponse {
+  repeated prometheus.ChunkedSeries chunked_series = 1;
+  int64 query_index = 2;
+}
