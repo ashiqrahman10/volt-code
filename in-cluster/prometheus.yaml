@@ -97,7 +97,7 @@ data:
           regex: __meta_kubernetes_pod_label_(.+)
     
     remote_write:
-      - url: "https://0bd0197a1b30.ngrok-free.app/api/v1/receive"
+      - url: "${PROMETHEUS_REMOTE_WRITE_URL}"
         queue_config:
           max_samples_per_send: 500
           max_shards: 1

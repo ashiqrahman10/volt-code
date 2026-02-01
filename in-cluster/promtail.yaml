@@ -46,7 +46,7 @@ data:
       filename: /tmp/positions.yaml
 
     clients:
-      - url: https://0bd0197a1b30.ngrok-free.app/loki/api/v1/push
+      - url: ${LOKI_PUSH_URL}
 
     scrape_configs:
       - job_name: kubernetes-pods

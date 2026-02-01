@@ -68,11 +68,11 @@ data:
         cache_ttl: 24h
         shared_store: s3
       aws:
-        bucketnames: volt-q-bit
-        endpoint: https://sfo3.digitaloceanspaces.com
-        region: sfo3
-        access_key_id: DO00UTAX8VTEAR764TCD
-        secret_access_key: YJRwcTAFbcySW2xrjltnVTf3ZL+Z/kjzDnBTE20bpVc
+        bucketnames: ${LOKI_S3_BUCKET_NAME}
+        endpoint: ${LOKI_S3_ENDPOINT}
+        region: ${LOKI_S3_REGION}
+        access_key_id: ${LOKI_S3_ACCESS_KEY_ID}
+        secret_access_key: ${LOKI_S3_SECRET_ACCESS_KEY}
         s3forcepathstyle: false
     compactor:
       working_directory: /loki/boltdb-shipper-compactor
