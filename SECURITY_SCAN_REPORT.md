@@ -15,8 +15,8 @@ A comprehensive security scan was performed on the volt-code repository to ident
 
 **Issue:**
 ```yaml
-access_key_id: DO00UTAX8VTEAR764TCD
-secret_access_key: YJRwcTAFbcySW2xrjltnVTf3ZL+Z/kjzDnBTE20bpVc
+access_key_id: DO00UTAX8V************
+secret_access_key: YJRwcTAF********************************
 ```
 
 **Resolution:**
