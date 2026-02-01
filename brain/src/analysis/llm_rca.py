@@ -250,7 +250,7 @@ class GroqAnalyzer:
         
         print(f"DEBUG_RCA: System Prompt length: {len(system_prompt)}")
         print(f"DEBUG_RCA: User Prompt length: {len(user_prompt)}")
-        print(f"DEBUG_RCA: API Key start: {self.api_key[:5] if self.api_key else 'None'}...")
+        print(f"DEBUG_RCA: API Key configured: {'Yes' if self.api_key else 'No'}")
         print(f"DEBUG_RCA: Sending request to {self.GROQ_API_URL}")
         
         # Retry logic for 429 Rate Limits
